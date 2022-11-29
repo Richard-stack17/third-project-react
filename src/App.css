@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Patrick+Hand&display=swap');
+.App{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height: 100vh;
+    width:100%;
+    background-image: url('/images/background.jpg');
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.card{
+    width:100%;
+    max-width: 400px;
+    background-color: rgba(94, 251, 235, 0.604);
+    padding:20px;
+    padding-top: 30px;
+    border-radius:50px;
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    box-shadow: -1px -1px 4px 5px rgb(2, 2, 102);
+    
+    
+}
+.card__header,
+.card__footer,
+.card__temp{
+    grid-column:span 2;
+}
+.card__title{
+    text-align:center;
+    font-size: 2.5rem;
+    text-shadow: 1px 3px 4px rgb(255, 255, 255);
+}
+
+.card__subtitle{
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 300;
+    color:rgb(25, 8, 88);
+}
+.card__temp{
+    text-align: center;
+    font-size: 1.5rem;
+}
+.card__info{
+    display:grid;
+    gap:10px;
+    margin:7px;
+}
+.card__description{
+    margin-bottom:10px;
+    font-size:1.4rem;
+    font-weight: 300;
+    padding:0;
+    color:rgb(0, 65, 169);
+    font-weight: 700;
+}
+.card__list{
+    display:grid;
+    gap:8px;
+}
+.card__item{
+    font-size:1rem;
+    font-weight: 200;
+    color:rgb(237, 244, 244);
+    text-shadow: 1px 2px 4px black;
+}
+.card__item span{
+    color:rgb(5, 49, 77);
+    text-shadow:1px 2px 4px rgb(138, 248, 204);
+}
+.card__footer{
+    padding-top:20px;
+    display:flex;
+    justify-content:center;
+    padding-bottom:20px;
+}
+.card__btn{
+    padding:8px 15px;
+    font-size: 1.1rem;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight:800;
+    border-radius: 8px;
+    cursor:pointer;
+    background-color: rgb(19, 67, 181);
+    color:rgb(254, 254, 254);
+    box-shadow: 0 0 10px rgb(135, 135, 194);
+    transition: transform 100ms ease;
+    text-shadow: 1px 2px 4px black;;
+}
+.card__btn:hover{
+    transform: scale(1.05);
+}
+.card__btn:active{
+    transform: scale(0.95);
+    box-shadow: 1px 1px 5px rgb(181, 79, 237);
+}
+.load__title{
+    text-align: center;
+    padding:15px;
+    font-size: 40px;
+    color:beige;
+    font-family: 'Lobster', cursive;
+    text-shadow: 1px 2px 4px black;
+}
+.load__gif{
+    width:200px;
+}
